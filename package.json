@@ -1,0 +1,31 @@
+{
+  "name": "tutorial-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "author": {
+    "name": "Greg Holmes",
+    "email": "iam@gregholmes.co.uk",
+    "url": "https://gregholmes.dev"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "body-parser": "^1.19.0",
+    "common-tags": "^1.8.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
