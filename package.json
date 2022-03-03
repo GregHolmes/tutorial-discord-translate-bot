@@ -1,7 +1,7 @@
 {
   "name": "tutorial-discord-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "The code in this repository has been created to support a tutorial.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
