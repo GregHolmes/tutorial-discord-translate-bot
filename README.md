@@ -28,6 +28,51 @@ The `starter-files` branch is the starting branch for the accompanying tutorial 
 
 ### Cloning the Repository
 
+Clone the `starter-files` sample code of this GitHub repository. The file and directory structure is as below:
+
+- `commands`, the directory to store all commands your Discord bot will be listening to,
+- `config`, a place to store your configurations for your bot,
+- `handlers`, for this tutorial this will only store a `command.js` file, which handles all of your commands,
+- `reactions`, the directory to store all reactions your Discord bot will be listening to,
+- `services`, for this tutorial this will only store a `flags.js` file, which just contains an array of flags and their relevant data, such as language.
+
+To clone this repository in your terminal run the following command:
+
+```sh
+git clone -b starter-files git@github.com:GregHolmes/tutorial-discord-translate-bot.git
+```
+
+If you wish to see the complete example, check out the `main` branch.
+
+### Creating a Discord Bot Access Token
+
+### Update Credentials
+
+Copy the `.env.example` file to `.env`, and update it so that the `DISCORD_TOKEN=` has your Discord Bot's Access Token.
+
+## Run Discord Bot
+
+Now run the command below for your bot to start:
+
+```sh
+npm run dev
+```
+
+### Test Command
+
+In Discord, navigate to your server the bot is assigned to, then run a command `c!example`. You'll see your Discord bot post in the channel the following:
+
+```
+I am an example command
+```
+
+### Test Reaction
+
+In Discord, navigate to your server the bot is assigned to, then react to one of your messages. You'll see your Discord bot post in the channel the following:
+
+```
+<name> reacted with <emoji>
+```
 
 ## License
 
