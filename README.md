@@ -8,7 +8,7 @@ As an example, I've been gaming with a community of people on various survival g
 
 English tended to be the primary language in this community, but a large number didn't know enough English to get by, so I decided to build a translate bot to make their lives easier and let them connect with everyone else a little easier.
 
-The `master` branch is the starting branch for the accompanying post at: [Blog post url here]()
+The `starter-files` branch is the starting branch for the accompanying tutorial at: [Blog post url here](), while the `main` branch is the completed code for the tutorial.
 
 **Table of Contents**
 
