@@ -5,7 +5,6 @@ const { Client, Collection, Intents } = require('discord.js');
 // create a new Discord client
 const client = new Client({
 	allowedMentions: {
-			// set repliedUser value to `false` to turn off the mention by default
 			repliedUser: false
     },
 	intents: [
@@ -20,8 +19,6 @@ require('dotenv').config();
 
 const exampleReaction = require('./reactions/example-reaction');
 
-// when the client is ready, run this code
-// this event will only trigger one time after logging in
 client.once('ready', () => {
 	console.log('Ready!');
 
@@ -72,14 +69,12 @@ client.on('messageCreate', async message => {
 });
 
 client.on('messageReactionAdd', async (reaction, user) => {
-	// When we receive a reaction we check if the reaction is partial or not
 	if (reaction.partial) {
-		// If the message this reaction belongs to was removed the fetching might result in an API error, which we need to handle
 		try {
 			await reaction.fetch();
 		} catch (error) {
-			console.error('Something went wrong when fetching the message: ', error);
-			// Return as `reaction.message.author` may be undefined/null
+			console.error('Unable to fetch the message: ', error);
+
 			return;
 		}
 	}
