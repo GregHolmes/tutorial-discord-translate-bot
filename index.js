@@ -5,10 +5,14 @@ const { Client, Collection, Intents } = require('discord.js');
 // create a new Discord client
 const client = new Client({
 	allowedMentions: {
-        // set repliedUser value to `false` to turn off the mention by default
-        repliedUser: false
+			// set repliedUser value to `false` to turn off the mention by default
+			repliedUser: false
     },
-	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS]
+	intents: [
+		Intents.FLAGS.GUILDS,
+		Intents.FLAGS.GUILD_MESSAGES,
+		Intents.FLAGS.GUILD_MESSAGE_REACTIONS
+	]
 })
 
 const fs = require('fs');
