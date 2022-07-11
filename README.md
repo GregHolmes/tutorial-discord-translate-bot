@@ -1,5 +1,3 @@
-![Vonage][logo]
-
 # Build a Translate Bot for Discord
 
 Discord is a VoIP, instant messaging and digitial distribution platform, allowing people an easy way to talk over voice, video and text among their communities. I am, and have been involved, in Discord communities for some time now, for various purposes such as gaming, development, 3d printing. Something that is similar between all of these communities (other than that they're on Discord and have me in them) is that they're multi-lingual. 
@@ -15,6 +13,11 @@ The `starter-files` branch is the starting branch for the accompanying tutorial 
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
   - [Cloning the Repository](#cloning-the-repository)
+  - [Creating a Discord Bot Access Token](#creating-a-discord-bot-access-token)
+  - [Update Credentials](#update-credentials)
+- [Run Discord Bot](#run-discord-bot)
+  - [Test Command](#test-command)
+  - [Test Reaction](#test-reaction)
 - [License](#license)
 
 ## Prerequisites
@@ -45,6 +48,8 @@ git clone -b starter-files git@github.com:GregHolmes/tutorial-discord-translate-
 If you wish to see the complete example, check out the `main` branch.
 
 ### Creating a Discord Bot Access Token
+
+Following [Discord's developer documentation](https://discord.com/developers/docs/intro) on instructions to create a Discord Bot and the accompanying Access Token.
 
 ### Update Credentials
 
